@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+# Dynamite Goaltending Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive website built with **React**, **Bootstrap**, and **React Router** for Dynamite Goaltending. The project includes a dynamic navigation bar, responsive design, and custom components like dynamic links and a styled logo.
 
-Currently, two official plugins are available:
+### For Developers
+**Please use .tsx and not .jsx for React components. This project uses TypeScript for type safety and better code quality.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Layout**:
+  - Collapsible menu for smaller screens using Bootstrap's navbar components.
+  - Dynamic links generated from a configuration file.
+  - Custom hover effects on links.
+  
+- **Custom Styling**:
+  - Styled with Bootstrap's utility classes and additional custom CSS for fine-tuning.
+  - Custom color schemes for navbar, toggler button, and links.
 
-- Configure the top-level `parserOptions` property like this:
+- **Dynamic Routing**:
+  - Built with React Router to handle page navigation.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## Tech Stack
+
+- **React**: Component-based front-end library.
+- **Bootstrap**: Responsive design framework.
+- **React Router**: For navigation and dynamic routing.
+- **CSS**: Custom styles for additional customization.
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/breader1/dynamite-goaltending-website.git
+   cd dynamite-goaltending-website
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the app in your browser at `http://localhost:xxxx`.
+
+---
+
+## Project Structure
+
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+src/
+├── assets/                # Images and other static assets
+│   └── images/
+│       └── dynamite.png   # Logo for the navbar
+├── components/            # Reusable React components
+│   ├── Navbar.tsx         # Navbar component
+│   ├── SingleLink.tsx     # SingleLink component for dynamic links
+├── models/                # TypeScript interfaces
+│   └── LinkModel.ts       # Link interface definition
+├── pages/                 # React components for individual pages
+│   ├── About.tsx          # About page
+│   └── Programs.tsx       # Programs page
+├── styles.css             # Custom styles
+└── App.tsx                # Main app component
 ```
+Will update as files are added/removed/modified.

@@ -1,0 +1,33 @@
+.page-link {
+  display: inline-block; /* Ensure the link spans only the text width */
+  font-size: 1rem; /* Adjust as needed */
+  color: white; /* Use the theme's text color */
+  text-decoration: none; /* Remove the default underline */
+  position: relative; /* Required for ::after positioning */
+  font-weight: 600; /* Optional for emphasis */
+  padding: 0.5rem; /* Add some padding for clickable area */
+}
+
+.page-link:hover {
+  text-decoration: none; /* Ensure no default underline on hover */
+}
+
+.page-link::after {
+  content: ""; /* Adds the custom underline */
+  position: absolute;
+  left: 0;
+  bottom: 3px; /* Position it just under the text */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: white; /* Use the same color as the text */
+  transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.page-link:hover::after {
+  width: 100%; /* Fully expand the underline on hover */
+}
+
+/* Change the color of the toggler icon bars */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
