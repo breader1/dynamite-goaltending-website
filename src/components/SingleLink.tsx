@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./styles.css";
-import { motion } from 'motion/react';
+import { motion } from "motion/react";
+
+const MotionLink = motion(Link); // Wrap Link with motion for animations
 
 interface Props {
   linkName: string;
@@ -9,15 +11,14 @@ interface Props {
 
 const SingleLink = ({ linkName, linkPath }: Props) => {
   return (
-<motion.a
-  href={linkPath}
-  whileHover={{ scale: 1.1, color: "#ff0000" }}
-  transition={{ duration: 0.2 }}
-  className="page-link"
->
-  {linkName}
-</motion.a>
-
+    <MotionLink
+      to={linkPath} // Use 'to' for React Router navigation
+      whileHover={{ scale: 1.1, color: "#ff0000" }}
+      transition={{ duration: 0.2 }}
+      className="page-link"
+    >
+      {linkName}
+    </MotionLink>
   );
 };
 
