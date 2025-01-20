@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
-import "./styles.css";
-import { motion } from "motion/react";
+"use client";
 
-const MotionLink = motion(Link); // Wrap Link with motion for animations
+import { NavLink } from "react-router-dom";
+import { motion } from "motion/react";
+import "./styles.css";
+
+// Wrap NavLink with motion
+const MotionNavLink = motion(NavLink);
 
 interface Props {
   linkName: string;
@@ -11,14 +14,16 @@ interface Props {
 
 const SingleLink = ({ linkName, linkPath }: Props) => {
   return (
-    <MotionLink
-      to={linkPath} // Use 'to' for React Router navigation
-      whileHover={{ scale: 1.1, color: "#ff0000" }}
+    <MotionNavLink
+      to={linkPath}
+      whileHover={{ scale: 1.1 }}
       transition={{ duration: 0.2 }}
-      className="page-link"
+      className={({ isActive }) =>
+        `page-link ${isActive ? "active-link" : ""}`
+      } // Add 'active-link' class when the route matches
     >
       {linkName}
-    </MotionLink>
+    </MotionNavLink>
   );
 };
 
