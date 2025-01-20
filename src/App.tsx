@@ -16,8 +16,8 @@ function App() {
       <BrowserRouter>
         <Navbar title="Dynamite Goaltending" links={links} />
         <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/programs" element={<Programs />} />
+          <Route path="" element={<About />} />
+          <Route path="" element={<Programs />} />
         </Routes>
       </BrowserRouter>
 
@@ -30,6 +30,10 @@ function App() {
           ctaText="Get Started"
           ctaLink="/about"
         />
+      </div>
+
+      <div>
+        <Programs/>
       </div>
     </>
   );
