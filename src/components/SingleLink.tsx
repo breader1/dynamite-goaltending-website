@@ -16,7 +16,7 @@ const SingleLink = ({ linkName, linkPath }: Props) => {
   return (
     <MotionNavLink
       to={linkPath}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.0 }}
       transition={{ duration: 0.2 }}
       className={({ isActive }) =>
         `page-link ${isActive ? "active-link" : ""}`

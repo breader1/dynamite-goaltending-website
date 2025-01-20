@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
+import Hero from "./components/Home/Hero";
 
 function App() {
   const links = [
@@ -11,7 +12,7 @@ function App() {
   ];
   return (
     <>
-    {/* Navbar */}
+      {/* Navbar */}
       <BrowserRouter>
         <Navbar title="Dynamite Goaltending" links={links} />
         <Routes>
@@ -21,7 +22,15 @@ function App() {
       </BrowserRouter>
 
       {/* Main */}
-      <main className=""></main>
+      <div>
+        <Hero
+          title="Welcome to Dynamite Goaltending"
+          subtitle="Your one-stop shop for goaltending excellence."
+          backgroundImage="https://placehold.co/1600x900"
+          ctaText="Get Started"
+          ctaLink="/about"
+        />
+      </div>
     </>
   );
 }
