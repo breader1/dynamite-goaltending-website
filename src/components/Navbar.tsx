@@ -32,12 +32,12 @@ const Navbar = ({ title, links }: Props) => {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-sm bg-black text-white border-bottom border-5 border-danger">
+    <nav className="navbar sticky-top navbar-expand-sm bg-black text-white border-bottom border-5 border-danger">
       <div className="container-fluid">
         {/* Navbar Brand */}
         <a
           className="navbar-brand d-flex align-items-center text-white page-link"
-          href="#"
+          href="/home"
         >
           <img
             src={DynamiteLogo}
