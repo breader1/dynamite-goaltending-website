@@ -18,9 +18,7 @@ const SingleLink = ({ linkName, linkPath }: Props) => {
       to={linkPath}
       whileHover={{ scale: 1.0 }}
       transition={{ duration: 0.2 }}
-      className={({ isActive }) =>
-        `page-link ${isActive ? "active-link" : ""}`
-      } // Add 'active-link' class when the route matches
+      className={({ isActive }) => `page-link ${isActive ? "active-link" : ""}`} // Add 'active-link' class when the route matches
     >
       {linkName}
     </MotionNavLink>
