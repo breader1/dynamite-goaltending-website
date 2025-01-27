@@ -4,27 +4,26 @@ const Programs = () => {
   const programs = [
     {
       id: 1,
-      title: "Tailored Training Plans for Every Goalie",
-      description:
-        "Our training plans are customized to fit your specific needs and goals.",
+      title: "Private Sessions",
+      description:"1-on-1 Training Sessions",
       imageAlt: "Training Plan",
+      price: 120,
     },
     {
       id: 2,
-      title: "Learn from Experienced and Passionate Coaches",
-      description:
-        "Our coaches bring years of experience and a passion for the game to every session.",
+      title: "Team Practices",
+      description:"Goalie Training During Team Practices",
       imageAlt: "Experienced Coaches",
+      price: 80,
     },
   ];
 
   return (
     <section className="programs-section text-center py-5">
       <h2 className="fw-bold">Be Explosive</h2>
-      <p className="mb-5">
-        At Dynamite Goaltending, we focus on personalized training that caters
-        to each goalie’s unique style. Our expert coaches utilize modern
-        techniques to ensure you reach your full potential on the ice.
+      <p className="mb-5 ">
+        At Dynamite Goaltending, we provide personalized training and modern
+        techniques to help goalies reach their full potential.
       </p>
 
       <div className="row justify-content-center">
@@ -34,14 +33,15 @@ const Programs = () => {
               title={program.title}
               description={program.description}
               imageAlt={program.imageAlt}
+              price={program.price}
             />
           </div>
         ))}
       </div>
 
       <div className="mt-4">
-        <button className="btn btn-primary me-2">Join</button>
-        <a href="#" className="btn btn-outline-primary">
+        <button className="btn btn-danger me-2">Join</button>
+        <a href="#" className="btn btn-outline-danger">
           Learn More
         </a>
       </div>
