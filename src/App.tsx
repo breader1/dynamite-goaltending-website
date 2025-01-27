@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Hero from "./components/Home/Hero";
+import Footer from "./components/Footer";
 
 function App() {
   const links = [
@@ -24,8 +25,8 @@ function App() {
       {/* Main */}
       <div>
         <Hero
-          title="Welcome to Dynamite Goaltending"
-          subtitle="Your one-stop shop for goaltending excellence."
+          title="Dynamite Goaltending"
+          subtitle="Add Explosive Power to Your Game"
           backgroundImage="https://placehold.co/1600x900"
           ctaText="Get Started"
           ctaLink="/about"
@@ -33,7 +34,15 @@ function App() {
       </div>
 
       <div>
-        <Programs/>
+        <Programs />
+      </div>
+
+      <div>
+        <About />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </>
   );

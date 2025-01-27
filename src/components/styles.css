@@ -36,3 +36,30 @@
 .active-link::after {
   width: 100%; /* Expand underline on hover or when active */
 }
+
+
+.footer {
+  background-color: #343a40; /* Dark gray background */
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-social a {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+  color: #0d6efd; /* Bootstrap primary color (blue) */
+}
+
+.footer-link {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.85rem;
+}

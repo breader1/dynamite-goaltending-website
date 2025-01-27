@@ -4,9 +4,10 @@ interface ProgramCardProps {
   title: string;
   description: string;
   imageAlt: string;
+  price?: number;
 }
 
-const ProgramCard = ({ title, description, imageAlt }: ProgramCardProps) => {
+const ProgramCard = ({ title, description, imageAlt, price }: ProgramCardProps) => {
   return (
     <div className="card h-100 text-center shadow-sm">
       <div
@@ -28,6 +29,7 @@ const ProgramCard = ({ title, description, imageAlt }: ProgramCardProps) => {
       <div className="card-body">
         <h5 className="card-title fw-bold">{title}</h5>
         <p className="card-text">{description}</p>
+        {price && <p className="fw-bold">${price}</p>}  
       </div>
     </div>
   );
