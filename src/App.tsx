@@ -16,10 +16,6 @@ function App() {
       {/* Navbar */}
       <BrowserRouter>
         <Navbar title="Dynamite Goaltending" links={links} />
-        <Routes>
-          <Route path="" element={<About />} />
-          <Route path="" element={<Programs />} />
-        </Routes>
       </BrowserRouter>
 
       {/* Main */}

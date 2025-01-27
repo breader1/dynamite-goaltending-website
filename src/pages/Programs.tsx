@@ -19,7 +19,7 @@ const Programs = () => {
   ];
 
   return (
-    <section className="programs-section text-center py-5">
+    <section id="programs" className="programs-section text-center py-5">
       <h2 className="fw-bold">Be Explosive</h2>
       <p className="mb-5 ">
         At Dynamite Goaltending, we provide personalized training and modern
