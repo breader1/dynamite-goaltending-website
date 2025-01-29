@@ -63,3 +63,19 @@
   margin: 0;
   font-size: 0.85rem;
 }
+
+.contact-section {
+  background-color: #f8f9fa; /* Light background */
+  padding: 3rem 1rem;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #6c757d; /* Muted text color */
+}
+
