@@ -1,25 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Hero from "./components/Home/Hero";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const links = [
     { id: 1, linkName: "Home" },
     { id: 2, linkName: "About" },
     { id: 3, linkName: "Programs" },
+    { id: 4, linkName: "Contact" },
   ];
   return (
     <>
       {/* Navbar */}
       <BrowserRouter>
         <Navbar title="Dynamite Goaltending" links={links} />
-        <Routes>
-          <Route path="" element={<About />} />
-          <Route path="" element={<Programs />} />
-        </Routes>
       </BrowserRouter>
 
       {/* Main */}
@@ -39,6 +37,10 @@ function App() {
 
       <div>
         <About />
+      </div>
+
+      <div>
+        <Contact email="norm@dynamitegoaltending.com" />
       </div>
 
       <div>
