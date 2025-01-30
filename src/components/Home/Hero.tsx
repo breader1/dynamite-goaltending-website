@@ -28,7 +28,7 @@ const Hero = ({
             transition={{ duration: 2.0 }}
             className="hero-content"
           >
-            <h1 className="hero-title">{title}</h1>
+            <h1 className="hero-title"><img src={title} alt="" /></h1>
             {subtitle && <p className="hero-subtitle">{subtitle}</p>}
             <a href={ctaLink} className="hero-cta">
               {ctaText}

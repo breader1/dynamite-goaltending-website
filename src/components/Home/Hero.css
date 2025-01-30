@@ -19,6 +19,8 @@
 .hero-subtitle {
   font-size: clamp(1rem, 3vw, 1.5rem);
   margin-bottom: 2rem;
+  color:white;
+  font-weight: bold;
 }
 
 .hero-cta {

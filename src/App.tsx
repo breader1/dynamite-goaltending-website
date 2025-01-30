@@ -5,6 +5,8 @@ import Programs from "./pages/Programs";
 import Hero from "./components/Home/Hero";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact/Contact";
+import HeroImage from "./assets/images/Jacob_v5.jpg";
+import DynamiteLogo from "./assets/images/dynamite-removebg.png";
 
 function App() {
   const links = [
@@ -23,9 +25,9 @@ function App() {
       {/* Main */}
       <div>
         <Hero
-          title="Dynamite Goaltending"
+          title={DynamiteLogo}
           subtitle="Add Explosive Power to Your Game"
-          backgroundImage="https://placehold.co/1600x900"
+          backgroundImage={HeroImage}
           ctaText="Get Started"
           ctaLink="/about"
         />
