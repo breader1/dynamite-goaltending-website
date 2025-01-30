@@ -1,18 +1,22 @@
 import ProgramCard from "../components/Programs/ProgramCard";
+import PrivateSessionImage from "../assets/images/Jacob_v4.jpg";
+import TeamPracticeImage from "../assets/images/Jacob_v3.jpg";
 
 const Programs = () => {
   const programs = [
     {
       id: 1,
       title: "Private Sessions",
-      description:"1-on-1 Training Sessions",
+      description: "1-on-1 Training Sessions",
+      image: PrivateSessionImage,
       imageAlt: "Training Plan",
       price: 120,
     },
     {
       id: 2,
       title: "Team Practices",
-      description:"Goalie Training During Team Practices",
+      description: "Goalie Training During Team Practices",
+      image: TeamPracticeImage,
       imageAlt: "Experienced Coaches",
       price: 80,
     },
@@ -34,6 +38,7 @@ const Programs = () => {
               description={program.description}
               imageAlt={program.imageAlt}
               price={program.price}
+              image={program.image}
             />
           </div>
         ))}

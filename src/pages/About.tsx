@@ -1,5 +1,6 @@
 import AboutHeader from "../components/About/AboutHeader";
 import TeamGrid from "../components/About/TeamGrid";
+import NormProfileImage from "../assets/images/Norm1.jpg"
 
 const About = () => {
   const teamMembers = [
@@ -8,21 +9,7 @@ const About = () => {
       role: "Head Coach",
       description:
         "With 20+ years of experience, Norm specializes in developing elite goalies, focusing on technique, agility, and mental toughness. Norm excels in helping his students get to the next level by providing personalized training and mentorship.",
-      image: "https://placehold.co/600x400",
-    },
-    {
-      name: "Coach Norm",
-      role: "Head Coach",
-      description:
-        "With 20+ years of experience, Norm specializes in developing elite goalies, focusing on technique, agility, and mental toughness. Norm excels in helping his students get to the next level by providing personalized training and mentorship.",
-      image: "https://placehold.co/600x400",
-    },
-    {
-      name: "Coach Norm",
-      role: "Head Coach",
-      description:
-        "With 20+ years of experience, Norm specializes in developing elite goalies, focusing on technique, agility, and mental toughness. Norm excels in helping his students get to the next level by providing personalized training and mentorship.",
-      image: "https://placehold.co/600x400",
+      image: NormProfileImage,
     },
   ];
 

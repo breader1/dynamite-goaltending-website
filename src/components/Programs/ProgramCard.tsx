@@ -3,13 +3,14 @@ import "./Program.css";
 interface ProgramCardProps {
   title: string;
   description: string;
+  image: string;
   imageAlt: string;
   price?: number;
 }
 
-const ProgramCard = ({ title, description, imageAlt, price }: ProgramCardProps) => {
+const ProgramCard = ({ title, description, image, imageAlt, price }: ProgramCardProps) => {
   return (
-    <div className="card h-100 text-center shadow-sm">
+    <div className="card h-100 text-center shadow-sm border border-black border-3">
       <div
         className="card-img-top bg-light"
         style={{
@@ -20,7 +21,7 @@ const ProgramCard = ({ title, description, imageAlt, price }: ProgramCardProps) 
         }}
       >
         <img
-          src="https://placehold.co/600x400"
+          src={image}
           alt={imageAlt}
           className="img-fluid"
           style={{ maxHeight: "100%" }}
