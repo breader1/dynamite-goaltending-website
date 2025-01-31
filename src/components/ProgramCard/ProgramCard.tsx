@@ -1,4 +1,4 @@
-import "./Program.css";
+import "./ProgramCard.css";
 
 interface ProgramCardProps {
   title: string;
@@ -10,7 +10,7 @@ interface ProgramCardProps {
 
 const ProgramCard = ({ title, description, image, imageAlt, price }: ProgramCardProps) => {
   return (
-    <div className="card h-100 text-center shadow-sm border border-black border-3">
+    <div className="card h-100 text-center shadow-sm border border-black border-2">
       <div
         className="card-img-top bg-light"
         style={{

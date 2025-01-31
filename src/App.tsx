@@ -1,12 +1,11 @@
-import { BrowserRouter} from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
-import Hero from "./components/Home/Hero";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact/Contact";
-import HeroImage from "./assets/images/Jacob_v5.jpg";
-import DynamiteLogo from "./assets/images/dynamite-removebg.png";
+import Home from "./pages/Home";
+import Footer from "./components/Footer/Footer";
+import Contact from "./pages/Contact";
+import "./App.css";
 
 function App() {
   const links = [
@@ -16,39 +15,22 @@ function App() {
     { id: 4, linkName: "Contact" },
   ];
   return (
-    <>
-      {/* Navbar */}
+    <div className="d-flex flex-column min-vh-100">
       <BrowserRouter>
         <Navbar title="Dynamite Goaltending" links={links} />
-      </BrowserRouter>
-
-      {/* Main */}
-      <div>
-        <Hero
-          title={DynamiteLogo}
-          subtitle="Add Explosive Power to Your Game"
-          backgroundImage={HeroImage}
-          ctaText="Get Started"
-          ctaLink="/about"
-        />
-      </div>
-
-      <div>
-        <Programs />
-      </div>
-
-      <div>
-        <About />
-      </div>
-
-      <div>
-        <Contact email="norm@dynamitegoaltending.com" />
-      </div>
-
-      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route
+            path="/contact"
+            element={<Contact/>}
+          />
+        </Routes>
         <Footer />
-      </div>
-    </>
+      </BrowserRouter>
+    </div>
   );
 }
 

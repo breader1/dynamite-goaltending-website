@@ -3,9 +3,9 @@
 import { AnimatePresence } from "motion/react";
 import * as motion from "motion/react-client";
 import { useState, useEffect } from "react";
-import { Link } from "../models/LinkModel";
+import { Link } from "../../models/LinkModel";
 import SingleLink from "./SingleLink";
-import DynamiteLogo from "../assets/images/dynamite.png";
+import DynamiteLogo from "../../assets/images/dynamite.png";
 
 interface Props {
   title: string;

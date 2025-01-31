@@ -2,7 +2,7 @@
 
 import { NavLink } from "react-router-dom";
 import { motion } from "motion/react";
-import "./styles.css";
+import "../styles.css";
 
 // Wrap NavLink with motion
 const MotionNavLink = motion(NavLink);
