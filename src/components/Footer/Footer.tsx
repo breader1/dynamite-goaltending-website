@@ -1,9 +1,9 @@
 import { FaInstagram, FaLinkedin } from "react-icons/fa"; // Icons for social media
-import "./styles.css"; // Optional for custom styles
+import "../styles.css"; // Optional for custom styles
 
 const Footer = () => {
   return (
-    <footer className="footer bg-dark text-white py-4">
+    <footer className="footer bg-dark text-white py-4 mt-auto">
       <div className="container text-center">
         {/* Social Media Links */}
         <div className="footer-social mb-3">

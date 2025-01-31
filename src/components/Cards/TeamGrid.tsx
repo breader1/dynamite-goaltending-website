@@ -21,7 +21,7 @@ const TeamGrid = ({ members }: TeamGridProps) => {
           }}
         >
           <div
-            className="h-100 text-center shadow-sm border rounded"
+            className="h-100 text-center border border-2 border-black rounded"
             style={{
               padding: "1.5rem",
               backgroundColor: "#f8f9fa",
