@@ -31,9 +31,9 @@ const HomePrograms = () => {
     },
   ];
   return (
-    <div id="programs" className="programs-section text-center py-5">
+    <div id="programs" className="programs-section text-center py-5 bg-dark-subtle">
       <h2 className="fw-bold">Be Explosive</h2>
-      <p className="mb-5 ">
+      <p className="mb-5 text-black">
         At Dynamite Goaltending, we provide personalized training and modern
         techniques to help goalies reach their full potential.
       </p>
