@@ -13,7 +13,7 @@ const HomeAbout = () => {
     },
   ];
   return (
-    <div id="about" className="about-section py-5">
+    <div id="about" className="about-section py-5 bg-dark-subtle">
       <div className="container">
         <AboutHeader
           title="Coaches"

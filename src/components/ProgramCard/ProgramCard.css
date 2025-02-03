@@ -18,10 +18,6 @@
   margin-right: 5%;
 }
 
-/* .card:hover {
-  transform: scale(1.05);
-} */
-
 .card-img-top {
   border-bottom: 2px solid #0d6efd; /* Add a blue border under the image */
 }
