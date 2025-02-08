@@ -1,16 +1,19 @@
+import AboutCoaches from "../components/PageLayouts/About/AboutCoaches";
+import AboutDescription from "../components/PageLayouts/About/AboutDescription";
+import AboutHero from "../components/PageLayouts/About/AboutHero";
+import AboutPartners from "../components/PageLayouts/About/AboutPartners";
+
 const About = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <p>
-        Welcome to Dynamite Goaltending! We are dedicated to providing the best
-        goaltending training and resources.
-      </p>
-      <p>
-        Our mission is to help goalies of all levels improve their skills and
-        achieve their goals.
-      </p>
-    </div>
+    <>
+      <AboutHero />
+
+      <AboutDescription />
+
+      <AboutCoaches />
+      
+      <AboutPartners />
+    </>
   );
 };
 

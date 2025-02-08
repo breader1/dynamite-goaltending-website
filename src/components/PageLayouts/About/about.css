@@ -1,0 +1,53 @@
+.about-description {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 3rem 0; /* Vertical padding for spacing */
+}
+
+.section-title {
+  font-size: 2rem; /* Large title font size */
+  font-weight: bold;
+  color: #333; /* Darker text color */
+}
+
+.section-description {
+  font-size: 1rem;
+  line-height: 1.8; /* Better readability */
+  color: #555; /* Softer text color */
+}
+
+.philosophy-image {
+  max-width: 100%;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (max-width: 768px) {
+  .about-description .row {
+    flex-direction: column-reverse; /* Stack image below text on small screens */
+  }
+
+  .philosophy-image {
+    margin-top: 2rem; /* Add spacing for stacked layout */
+  }
+}
+
+.about-description .row {
+  margin-bottom: 3rem; /* Add spacing between rows */
+}
+
+.about-description img.philosophy-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-coaches {
+  background-color: white;
+  margin: auto;
+}
+
+.partners-section {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 3rem 0; /* Add vertical spacing */
+  width: 100%; /* Ensure full width */
+}

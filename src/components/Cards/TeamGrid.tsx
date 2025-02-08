@@ -1,15 +1,10 @@
-interface TeamMember {
-  name: string;
-  role: string;
-  description: string;
-  image: string;
-}
+import { Coach } from "../../models/CoachModel";
 
 interface TeamGridProps {
-  members: TeamMember[];
+  coaches: Coach[];
 }
 
-const TeamGrid = ({ members }: TeamGridProps) => {
+const TeamGrid = ({ coaches: members }: TeamGridProps) => {
   return (
     <div className="row justify-content-center">
       {members.map((member, index) => (
