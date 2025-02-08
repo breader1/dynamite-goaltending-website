@@ -1,0 +1,20 @@
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.00rem;
+  font-weight: bold;
+}
+
+.card-img-top {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
