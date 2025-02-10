@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../styles.css";
 import CardHeader from "../Cards/CardHeader";
+import VideoGallery from "./VideoGallery";
+import {videos} from "../../constants/Videos";
 
 interface GalleryProps {
   images: string[];
@@ -59,6 +61,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
           ))}
         </div>
       </div>
+      <VideoGallery videos={videos}/>
     </>
   );
 };
