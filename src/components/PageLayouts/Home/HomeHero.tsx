@@ -1,13 +1,12 @@
 import Hero from "../../Hero/Hero";
-import HeroImage from "../../../assets/images/Jacob_v5.jpg";
-import DynamiteLogo from "../../../assets/images/dynamite-removebg.png";
+import {Images} from "../../../constants/Images";
 
 const HomeHero = () => {
   return (
     <Hero
-      title={DynamiteLogo}
+      title={Images.DynamiteRemoveBG}
       subtitle="Add Explosive Power to Your Game"
-      backgroundImage={HeroImage}
+      backgroundImage={Images.JacobV5}
       ctaText="Get Started"
       ctaLink="/about"
     />

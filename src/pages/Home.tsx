@@ -2,7 +2,7 @@ import Gallery from "../components/Gallery/Gallery";
 import HomePrograms from "../components/PageLayouts/Home/HomePrograms";
 import HomeAbout from "../components/PageLayouts/Home/HomeAbout";
 import HomeHero from "../components/PageLayouts/Home/HomeHero";
-import { images } from "../constants/Images";
+import { ImageGallery } from "../constants/Images";
 const Home = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const Home = () => {
 
         <HomePrograms />
 
-        <Gallery images={images} />
+        <Gallery images={Object.values(ImageGallery)} />
 
         <HomeAbout />
       </div>

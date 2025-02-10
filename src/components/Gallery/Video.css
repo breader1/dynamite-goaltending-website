@@ -1,0 +1,33 @@
+.gallery-container {
+    text-align: center;
+  }
+  
+  .main-video {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .selected-video {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .thumbnail-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .thumbnail.active {
+    border: 2px solid #ff6600;
+  }

@@ -1,13 +1,12 @@
 import Hero from "../../Hero/Hero";
-import DynamiteLogo from "../../../assets/images/dynamite-removebg.png";
-import AboutHeroImage from "../../../assets/images/Jacob_v3.jpg";
+import { Images } from "../../../constants/Images";
 
 const AboutHero = () => {
   return (
     <Hero
-      title={DynamiteLogo}
+      title={Images.DynamiteRemoveBG}
       subtitle="What Are We About?"
-      backgroundImage={AboutHeroImage}
+      backgroundImage={Images.JacobV3}
     />
   );
 };

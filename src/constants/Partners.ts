@@ -1,26 +1,24 @@
 import { Partner } from "../models/PartnerModel";
-import TrappersImage from "../assets/images/trappers.jpg";
-import WesternImage from "../assets/images/western.png";
-import BlazersImage from "../assets/images/Blazers.png";
+import { Images } from "../constants/Images";
 
 export const partners: Partner[] = [
   {
     id: 1,
     name: "Langley Trappers",
-    image: TrappersImage,
+    image: Images.Trappers,
     imageAlt: "Langley Trappers",
   },
   {
     id: 2,
     name: "Blazers",
-    image: BlazersImage,
+    image: Images.Blazers,
     imageAlt: "Blazers",
   },
 
   {
     id: 3,
     name: "Western Goaltending",
-    image: WesternImage,
+    image: Images.Western,
     imageAlt: "Western Goaltending",
   },
 ];
