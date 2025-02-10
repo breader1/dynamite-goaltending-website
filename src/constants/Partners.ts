@@ -1,23 +1,26 @@
 import { Partner } from "../models/PartnerModel";
+import TrappersImage from "../assets/images/trappers.jpg";
+import WesternImage from "../assets/images/western.png";
+import BlazersImage from "../assets/images/Blazers.png";
 
 export const partners: Partner[] = [
   {
     id: 1,
     name: "Langley Trappers",
-    image: "https://placehold.co/600x400",
+    image: TrappersImage,
     imageAlt: "Langley Trappers",
   },
   {
     id: 2,
     name: "Blazers",
-    image: "https://placehold.co/600x400",
+    image: BlazersImage,
     imageAlt: "Blazers",
   },
 
   {
     id: 3,
     name: "Western Goaltending",
-    image: "https://placehold.co/600x400",
+    image: WesternImage,
     imageAlt: "Western Goaltending",
   },
 ];
