@@ -1,12 +1,12 @@
 import Hero from "../../Hero/Hero";
-import {Images} from "../../../constants/Images";
+import {images} from "../../../constants/Images";
 
 const HomeHero = () => {
   return (
     <Hero
-      title={Images.DynamiteRemoveBG}
+      title={images.DynamiteRemoveBG}
       subtitle="Add Explosive Power to Your Game"
-      backgroundImage={Images.JacobV5}
+      backgroundImage={images.JacobV5}
       ctaText="Get Started"
       ctaLink="/about"
     />

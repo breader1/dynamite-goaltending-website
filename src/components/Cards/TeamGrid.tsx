@@ -1,10 +1,10 @@
 import { Coach } from "../../models/CoachModel";
 
 interface TeamGridProps {
-  coaches: Coach[];
+  data?: Coach[];
 }
 
-const TeamGrid = ({ coaches: members }: TeamGridProps) => {
+const TeamGrid = ({ data: members = [] }: TeamGridProps) => {
   return (
     <div className="row justify-content-center">
       {members.map((member, index) => (

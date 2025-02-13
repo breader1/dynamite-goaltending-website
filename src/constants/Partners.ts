@@ -1,24 +1,24 @@
 import { Partner } from "../models/PartnerModel";
-import { Images } from "../constants/Images";
+import { images } from "../constants/Images";
 
 export const partners: Partner[] = [
   {
     id: 1,
     name: "Langley Trappers",
-    image: Images.Trappers,
+    image: images.Trappers,
     imageAlt: "Langley Trappers",
   },
   {
     id: 2,
     name: "Blazers",
-    image: Images.Blazers,
+    image: images.Blazers,
     imageAlt: "Blazers",
   },
 
   {
     id: 3,
     name: "Western Goaltending",
-    image: Images.Western,
+    image: images.Western,
     imageAlt: "Western Goaltending",
   },
 ];

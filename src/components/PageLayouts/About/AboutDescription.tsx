@@ -1,5 +1,5 @@
 import "./about.css";
-import { Images } from "../../../constants/Images";
+import { images } from "../../../constants/Images";
 
 const AboutDescription = () => {
   return (
@@ -28,7 +28,7 @@ const AboutDescription = () => {
             {/* Image Section */}
             <div className="col-md-6 text-center">
               <img
-                src={Images.NormShot}
+                src={images.NormShot}
                 alt="Philosophy Image"
                 className="philosophy-image img-fluid rounded shadow"
               />

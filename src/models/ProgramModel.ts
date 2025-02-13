@@ -4,5 +4,6 @@ export interface Program {
   description: string;
   image: string;
   imageAlt: string;
-  price: number;
+  price?: number;
+  long_description?: string;
 }

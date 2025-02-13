@@ -1,12 +1,19 @@
-import DynamiteLogo from "../assets/images/dynamite-removebg.png";
-import Hero from "../components/Hero/Hero";
+import CallToAction from "../components/CallToAction/CallToAction";
+import ProgramDescription from "../components/PageLayouts/Programs/ProgramDescription";
+import { ProgramHero } from "../components/PageLayouts/Programs/ProgramHero";
 const Programs = () => {
   return (
-    <Hero
-      title={DynamiteLogo}
-      subtitle={"This page is under construction, Check back later"}
-      backgroundImage={""}
-    />
+    <>
+      <ProgramHero />
+      <ProgramDescription />
+      <CallToAction
+        message={"Schedule a session with us today!"}
+        buttonText={"Join now"}
+        onButtonClick={function (): void {
+          window.location.href = "/contact";
+        }}
+      />
+    </>
   );
 };
 

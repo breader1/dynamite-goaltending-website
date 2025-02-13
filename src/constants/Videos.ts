@@ -9,18 +9,18 @@ import BrettSkate5 from "../assets/videos/brett_skate_5.mp4";
 import BrettSkate6 from "../assets/videos/brett_skate_6.mp4";
 import BrettSkate7 from "../assets/videos/brett_skate_7.mp4";
 
-import { Images } from "./Images";
+import { images } from "./Images";
 import { Video } from "../models/VideoModel";
 
 export const videos: Video[] = [
-  { thumbnail: Images.Brett, url: DemoBrett },
-  { thumbnail: Images.Dynamite, url: DemoThomas },
-  { thumbnail: Images.Dynamite, url: DemoWhatsHisNuts },
-  { thumbnail: Images.Brett, url: BrettSkate1 },
-  { thumbnail: Images.Brett, url: BrettSkate2 },
-  { thumbnail: Images.Brett, url: BrettSkate3 },
-  { thumbnail: Images.Brett, url: BrettSkate4 },
-  { thumbnail: Images.Brett, url: BrettSkate5 },
-  { thumbnail: Images.Brett, url: BrettSkate6 },
-  { thumbnail: Images.Brett, url: BrettSkate7 },
+  { thumbnail: images.Brett, url: DemoBrett },
+  { thumbnail: images.Dynamite, url: DemoThomas },
+  { thumbnail: images.Dynamite, url: DemoWhatsHisNuts },
+  { thumbnail: images.Brett, url: BrettSkate1 },
+  { thumbnail: images.Brett, url: BrettSkate2 },
+  { thumbnail: images.Brett, url: BrettSkate3 },
+  { thumbnail: images.Brett, url: BrettSkate4 },
+  { thumbnail: images.Brett, url: BrettSkate5 },
+  { thumbnail: images.Brett, url: BrettSkate6 },
+  { thumbnail: images.Brett, url: BrettSkate7 },
 ];
