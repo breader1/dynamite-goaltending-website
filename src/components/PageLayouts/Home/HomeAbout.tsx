@@ -13,7 +13,7 @@ const HomeAbout = () => {
         />
 
         {/* Team Grid */}
-        <TeamGrid coaches={coaches} />
+        <TeamGrid data={coaches} />
       </div>
     </div>
   );

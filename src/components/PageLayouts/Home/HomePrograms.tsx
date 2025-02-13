@@ -25,7 +25,7 @@ const HomePrograms = () => {
       </div>
 
       <div className="mt-4">
-        <a href="/about" className="btn btn-outline-danger">
+        <a href="/programs" className="btn btn-outline-danger">
           Learn More
         </a>
       </div>

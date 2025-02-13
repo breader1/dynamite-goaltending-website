@@ -1,0 +1,37 @@
+.cta-container {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  border-color: black;
+  margin: 2rem auto;
+  max-width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cta-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-container button {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-container button:hover {
+  background-color: red;
+  color: white;
+}
