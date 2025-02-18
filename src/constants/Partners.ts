@@ -8,13 +8,12 @@ export const partners: Partner[] = [
     image: images.Trappers,
     imageAlt: "Langley Trappers",
   },
-  {
-    id: 2,
-    name: "Blazers",
-    image: images.Blazers,
-    imageAlt: "Blazers",
-  },
-
+  // {
+  //   id: 2,
+  //   name: "Blazers",
+  //   image: images.Blazers,
+  //   imageAlt: "Blazers",
+  // },
   {
     id: 3,
     name: "Western Goaltending",
