@@ -3,13 +3,15 @@
 import { AnimatePresence } from "motion/react";
 import * as motion from "motion/react-client";
 import { useState, useEffect } from "react";
-import { Link } from "../../models/LinkModel";
+import { Link as Linkm } from "../../models/LinkModel";
 import SingleLink from "./SingleLink";
 import DynamiteLogo from "../../assets/images/dynamite.png";
+import { Link } from "react-router-dom";
+
 
 interface Props {
   title: string;
-  links?: Link[];
+  links?: Linkm[];
 }
 
 const Navbar = ({ title, links }: Props) => {
@@ -35,9 +37,9 @@ const Navbar = ({ title, links }: Props) => {
     <nav className="navbar sticky-top navbar-expand-sm bg-black text-white border-bottom border-5 border-danger">
       <div className="container-fluid">
         {/* Navbar Brand */}
-        <a
+        <Link
           className="navbar-brand d-flex align-items-center text-white page-link"
-          href="/home"
+          to="/home"
         >
           <img
             src={DynamiteLogo}
@@ -47,7 +49,7 @@ const Navbar = ({ title, links }: Props) => {
             className="d-inline-block align-text-top me-2"
           />
           {title}
-        </a>
+        </Link>
 
         {/* Toggler Button (only visible on small screens) */}
         <button
