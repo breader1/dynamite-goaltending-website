@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Video.css";
 import CardHeader from "../Cards/CardHeader";
@@ -10,6 +10,40 @@ interface VideoGalleryProps {
 
 const VideoGallery: React.FC<VideoGalleryProps> = ({ videos }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [thumbnails, setThumbnails] = useState<string[]>([]);
+
+  useEffect(() => {
+    const generateThumbnails = async () => {
+      const newThumbnails: string[] = [];
+
+      for (const video of videos) {
+        const videoElement = document.createElement("video");
+        videoElement.src = video.url;
+        videoElement.crossOrigin = "anonymous";
+
+        await new Promise((resolve) => {
+          videoElement.addEventListener("loadeddata", () => {
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+            if (!ctx) return;
+            
+            canvas.width = 160; // Set thumbnail width
+            canvas.height = 90; // Set thumbnail height
+            
+            videoElement.currentTime = 1; // Capture frame at 1 second
+            videoElement.addEventListener("seeked", () => {
+              ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+              newThumbnails.push(canvas.toDataURL("image/png"));
+              if (newThumbnails.length === videos.length) setThumbnails(newThumbnails);
+              resolve(true);
+            });
+          });
+        });
+      }
+    };
+
+    generateThumbnails();
+  }, [videos]);
 
   return (
     <div className="gallery-container mt-5 p-5">
@@ -34,10 +68,10 @@ const VideoGallery: React.FC<VideoGalleryProps> = ({ videos }) => {
 
       {/* Thumbnail List */}
       <div className="thumbnail-list">
-        {videos.map((video, index) => (
+        {thumbnails.map((thumbnail, index) => (
           <motion.img
             key={index}
-            src={video.thumbnail}
+            src={thumbnail}
             alt={`Thumbnail ${index + 1}`}
             className={`thumbnail ${index === selectedIndex ? "active" : ""}`}
             onClick={() => setSelectedIndex(index)}
