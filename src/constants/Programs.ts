@@ -8,7 +8,7 @@ export const programs: Program[] = [
     description: "1-on-1 Training Sessions",
     image: images.Belle,
     imageAlt: "Training Plan",
-    price: 120,
+    price: 80,
     long_description:
       "Our private goalie training sessions provide a personalized, one-on-one experience tailored to your unique needs and skill level. Whether you're a beginner looking to build a strong foundation or an advanced goalie refining your technique, our experienced coaches will work closely with you to enhance your strengths and improve key areas of your game. With individualized instruction, focused drills, and expert guidance, you'll gain the confidence and skills needed to take your performance to the next level.",
   },
@@ -18,7 +18,7 @@ export const programs: Program[] = [
     description: "Training During Team Practices",
     image: images.JacobV1,
     imageAlt: "Experienced Coaches",
-    price: 80,
+    price: 85,
     long_description:
       "Our team practice sessions are designed to challenge and develop goalies of all ages and skill levels in a dynamic, team-oriented environment. Our experienced coaches work closely with you to create a structured training plan that aligns with your goals, focusing on key aspects like positioning, reaction time, and game-ready techniques. Through high-intensity drills, real-game scenarios, and expert feedback, you'll build confidence, sharpen your skills, and become a stronger, more resilient goalie.",
   },
