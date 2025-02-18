@@ -1,4 +1,5 @@
 import ProgramCard from "../../ProgramCard/ProgramCard";
+import {Link} from "react-router-dom";
 import {programs} from "../../../constants/Programs";
 
 const HomePrograms = () => {
@@ -25,9 +26,9 @@ const HomePrograms = () => {
       </div>
 
       <div className="mt-4">
-        <a href="/programs" className="btn btn-outline-danger">
+        <Link to="/programs" className="btn btn-outline-danger">
           Learn More
-        </a>
+        </Link>
       </div>
     </div>
   );
