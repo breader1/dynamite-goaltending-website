@@ -1,5 +1,6 @@
 import { Parallax } from "react-parallax";
 import { motion } from "motion/react";
+import {Link} from "react-router-dom";
 import "./Hero.css";
 
 interface HeroProps {
@@ -32,9 +33,9 @@ const Hero = ({
           </h1>
           {subtitle && <p className="hero-subtitle">{subtitle}</p>}
           {ctaText && (
-            <a href={ctaLink} className="hero-cta">
+            <Link to={ctaLink || "#"} className="hero-cta">
               {ctaText}
-            </a>
+            </Link>
           )}
         </motion.div>
       </section>
