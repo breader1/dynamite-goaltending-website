@@ -21,3 +21,10 @@
 .card-img-top {
   border-bottom: 2px solid red; /* Add a blue border under the image */
 }
+
+.program-card img {
+  width: 100%; /* Makes all images fill their container */
+  height: 150px; /* Sets a fixed height for consistency */
+  object-fit: cover; /* Ensures images don't stretch but fill the space */
+  border-radius: 8px; /* Optional: Gives images rounded corners */
+}

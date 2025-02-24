@@ -16,7 +16,7 @@ export const programs: Program[] = [
     id: 2,
     title: "Team Practices",
     description: "Training During Team Practices",
-    image: images.JacobV1,
+    image: images.Allen1,
     imageAlt: "Experienced Coaches",
     price: 85,
     long_description:
@@ -36,7 +36,7 @@ export const programs: Program[] = [
     id: 4,
     title: "Portfolio Building",
     description: "Build a portfolio for scouts",
-    image: images.JacobV6,
+    image: images.Allen4,
     imageAlt: "Portfolio",
     price: 80,
     long_description:
