@@ -13,7 +13,7 @@ const HomePrograms = () => {
 
       <div className="row justify-content-center">
         {programs.map((program) => (
-          <div className="col-md-4 mb-4" key={program.id}>
+          <div className="col-md-5 mb-4" key={program.id}>
             <ProgramCard
               title={program.title}
               description={program.description}
