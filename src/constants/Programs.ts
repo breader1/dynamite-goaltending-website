@@ -32,4 +32,14 @@ export const programs: Program[] = [
     long_description:
       "Our 2:1 ratio training sessions provide goalies of all ages and skill levels with the perfect balance of individualized coaching and competitive training. With two goalies per session, you'll receive personalized instruction while also benefiting from live comparisons, situational drills, and friendly competition. Our experienced coaches will tailor a structured training plan to your needs, helping you refine your technique, improve reaction speed, and elevate your overall performance in a focused yet dynamic environment.",
   },
+  {
+    id: 4,
+    title: "Portfolio Building",
+    description: "Build a portfolio for scouts",
+    image: images.JacobV6,
+    imageAlt: "Portfolio",
+    price: 80,
+    long_description:
+      "Our portfolio building sessions are designed to help goalies of all ages and skill levels create a comprehensive, professional portfolio that showcases their talent, skills, and experience. Whether you're looking to attract college scouts, professional teams, or sponsors, our experienced coaches will work closely with you to develop a customized portfolio that highlights your strengths, achievements, and unique playing style. With expert guidance, professional feedback, and a strategic approach, you'll gain the visibility and recognition you need to stand out in a competitive market.",
+  },
 ];

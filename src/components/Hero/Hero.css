@@ -1,13 +1,10 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   position: relative;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: white;
-  z-index: 2;
 }
 
 .hero-title {
@@ -16,10 +13,15 @@
   margin-bottom: 1rem;
 }
 
+.hero-title img {
+  max-width: 80%; 
+  height: auto;
+}
+
 .hero-subtitle {
   font-size: clamp(1rem, 3vw, 1.5rem);
   margin-bottom: 2rem;
-  color:white;
+  color: white;
   font-weight: bold;
 }
 
@@ -47,6 +49,24 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.9); 
+}
+
+@media (max-width: 600px) {
+  .react-parallax-bgimage {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .hero {
+    height: 80vh; 
+  }
+
+  .hero-title img {
+    max-width: 100%; 
+  }
+
+  .hero-content {
+    padding: 1rem; 
+  }
 }

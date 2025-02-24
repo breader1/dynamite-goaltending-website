@@ -19,7 +19,7 @@ const Hero = ({
   ctaLink,
 }: HeroProps) => {
   return (
-    <Parallax bgImage={backgroundImage} strength={300}>
+    <Parallax bgImage={backgroundImage} strength={window.innerWidth < 600 ? 150 : 300}>
       <div className="hero-overlay"></div>
       <section className="hero">
         <motion.div
