@@ -13,9 +13,9 @@
 }
 
 .dynamic-program-card img {
-  width: 100%;
+  width: 80%;
   border-radius: 8px;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
