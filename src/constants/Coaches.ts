@@ -23,7 +23,7 @@ export const coaches: Coach[] = [
     role: "Assistant Coach",
     description:
       "Allen has been training goalies for over 5 years. He played Junior A hockey with the Aldergrove Kodiaks, where he was team captain in his final year. Allen aims to be the best mentor for every goalie involved in his programs.",
-    long_description: `"Quote here" - Allen`,
+    long_description: `"I've been playing hockey for over a decade, and let me tell you, it hasn't always been a smooth ride. There have been years when I felt like giving up and starting fresh. My mission is to help young athletes find their motivation and keep playing through those tough times. That's why I'm here. To create a welcoming and supportive environment at the rink, where everyone feels safe and respected." - Allen`,
     image: images.Allen3,
   },
 ];

@@ -15,7 +15,7 @@ const ProgramsPage = () => {
       {/* Program Cards */}
       <div className="row justify-content-center">
         {programs.map((program) => (
-          <div key={program.id} className="col-md-4 mb-3">
+          <div key={program.id} className="col-md-5 mb-5">
             <DynamicProgramCard program={program} onSelect={setSelectedProgram} />
           </div>
         ))}
