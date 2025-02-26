@@ -56,7 +56,7 @@ This is a responsive website built with **React**, **Bootstrap**, and **React Ro
 4. Open the app in your browser at `http://localhost:xxxx`.
 
 ---
-
+<!-- 
 ## Project Structure
 
 ```
@@ -75,4 +75,4 @@ src/
 ├── styles.css             # Custom styles
 └── App.tsx                # Main app component
 ```
-Will update as files are added/removed/modified.
+Will update as files are added/removed/modified. -->
