@@ -5,7 +5,7 @@ export const testimonials: Testimonial[] = [
   {
     name: "Thomas",
     role: "Men's League Goalie",
-    image: "https://placehold.co/600x400",
+    image: images.Thomas,
     message:
       "Picked up a nice 5-2 win this morning at Fire Fighter hockey. Felt really confident after our session last week! Rebound control was on point!",
   },

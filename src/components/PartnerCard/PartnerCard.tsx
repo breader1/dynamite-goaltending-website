@@ -18,6 +18,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner }) => {
           alt={partner.imageAlt}
           className="img-fluid"
           style={{ maxHeight: "100%" }}
+          loading="lazy"
         />
       </div>
       <div className="card-body">

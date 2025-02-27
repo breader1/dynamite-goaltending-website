@@ -18,7 +18,7 @@ const DynamicDescription: React.FC<DynamicDescriptionProps> = ({ program }) => {
   return (
     <div className="dynamic-description">
       <h2>{program.title}</h2>
-      <img src={program.image} alt={program.title} />
+      <img src={program.image} alt={program.title} loading="lazy" />
       <p>{program.long_description}</p>
     </div>
   );

@@ -31,6 +31,7 @@ const TeamGrid = ({ data: members = [] }: TeamGridProps) => {
                 height: "120px",
                 objectFit: "cover",
               }}
+              loading="lazy"
             />
             <h5 className="fw-bold">{member.name}</h5>
             <p className="text-muted">{member.role}</p>

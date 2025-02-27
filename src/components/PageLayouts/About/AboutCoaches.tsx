@@ -20,6 +20,7 @@ const AboutCoaches = () => {
                   src={coach.image}
                   alt={`${coach.name} Profile`}
                   className="philosophy-image img-fluid rounded shadow"
+                  loading="lazy"
                 />
               </div>
               <div
