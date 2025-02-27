@@ -8,7 +8,6 @@ import SingleLink from "./SingleLink";
 import DynamiteLogo from "../../assets/images/dynamite.png";
 import { Link } from "react-router-dom";
 
-
 interface Props {
   title: string;
   links?: Linkm[];
@@ -47,6 +46,7 @@ const Navbar = ({ title, links }: Props) => {
             width="30"
             height="24"
             className="d-inline-block align-text-top me-2"
+            loading="lazy"
           />
           {title}
         </Link>

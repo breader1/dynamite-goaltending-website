@@ -8,7 +8,13 @@ interface ProgramCardProps {
   price?: number;
 }
 
-const ProgramCard = ({ title, description, image, imageAlt, price }: ProgramCardProps) => {
+const ProgramCard = ({
+  title,
+  description,
+  image,
+  imageAlt,
+  price,
+}: ProgramCardProps) => {
   return (
     <div className="card h-100 text-center shadow-sm border border-black border-2">
       <div
@@ -25,12 +31,13 @@ const ProgramCard = ({ title, description, image, imageAlt, price }: ProgramCard
           alt={imageAlt}
           className="img-fluid"
           style={{ maxHeight: "100%" }}
+          loading="lazy"
         />
       </div>
       <div className="card-body">
         <h5 className="card-title fw-bold">{title}</h5>
         <p className="card-text">{description}</p>
-        {price && <p className="fw-bold">${price}</p>}  
+        {price && <p className="fw-bold">${price}</p>}
       </div>
     </div>
   );

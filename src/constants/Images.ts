@@ -22,6 +22,7 @@ import Allen2 from "../assets/images/Allen2.jpg";
 import Allen3 from "../assets/images/Allen3.jpg";
 import Allen4 from "../assets/images/Allen4.jpg";
 import Allen5 from "../assets/images/Allen5.jpg";
+import Thomas from "../assets/images/thomas.jpg";
 
 export const ImageGallery = {
   Belle,
@@ -60,4 +61,5 @@ export const images = {
   Allen3,
   Allen4,
   Allen5,
+  Thomas,
 };

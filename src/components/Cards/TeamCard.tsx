@@ -13,6 +13,7 @@ const TeamCard = ({ name, role, description, image }: TeamCardProps) => {
         alt={name}
         className="rounded-circle mb-3"
         style={{ width: "120px", height: "120px", objectFit: "cover" }}
+        loading="lazy"
       />
       <h5 className="team-name">{name}</h5>
       <p className="team-role">{role}</p>

@@ -31,6 +31,7 @@ const AboutDescription = () => {
                 src={images.NormShot}
                 alt="Philosophy Image"
                 className="philosophy-image img-fluid rounded shadow"
+                loading="lazy"
               />
             </div>
           </div>
