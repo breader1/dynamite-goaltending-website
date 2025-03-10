@@ -3,4 +3,5 @@ export interface Partner {
   name: string;
   image: string;
   imageAlt: string;
+  url?: string;
 }
