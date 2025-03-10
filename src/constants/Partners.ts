@@ -7,6 +7,7 @@ export const partners: Partner[] = [
     name: "Langley Trappers",
     image: images.Trappers,
     imageAlt: "Langley Trappers",
+    url:"https://www.langleytrappers.com/",
   },
   // {
   //   id: 2,
@@ -19,5 +20,13 @@ export const partners: Partner[] = [
     name: "Western Goaltending",
     image: images.Western,
     imageAlt: "Western Goaltending",
+    url:"https://www.westerngoaltending.com/",
+  },
+  {
+    id: 4,
+    name: "The Hockey Shop",
+    image: images.HockeyShop,
+    imageAlt: "Western Goaltending",
+    url:"https://www.thehockeyshop.com/",
   },
 ];
