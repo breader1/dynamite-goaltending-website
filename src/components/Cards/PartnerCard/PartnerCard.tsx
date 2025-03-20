@@ -1,5 +1,5 @@
 import React from "react";
-import { Partner } from "../../models/PartnerModel";
+import { Partner } from "../../../models/PartnerModel";
 import "./PartnerCard.css";
 
 interface PartnerCardProps {

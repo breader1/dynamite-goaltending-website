@@ -16,7 +16,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="https://www.instagram.com/fire_marshall_buzz/"
+            href="https://www.instagram.com/dynamite_goaltending/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"

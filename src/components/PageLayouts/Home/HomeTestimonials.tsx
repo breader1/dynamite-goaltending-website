@@ -1,4 +1,4 @@
-import TeamGrid from "../../Cards/TeamGrid"
+import TeamGrid from "../../GridLayouts/TeamGrid"
 import { Testimonial } from "../../../models/Testimonial";
 
 interface HomeTestimonialsProps {
