@@ -1,13 +1,20 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import About from "./pages/About";
-import Programs from "./pages/Programs";
-import Home from "./pages/Home";
-import Footer from "./components/Footer/Footer";
-import Contact from "./pages/Contact";
-import { links } from "./constants/Links";
-import "./App.css";
-import Merch from "./pages/Merch";
+import './App.css';
+
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from 'react-router-dom';
+
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import { links } from './constants/Links';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Merch from './pages/Merch';
+import Portfolios from './pages/Portfolios';
+// import Programs from './pages/Programs';
 
 function App() {
   return (
@@ -18,9 +25,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/programs" element={<Programs />} />
+          {/* <Route path="/programs" element={<Programs />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/merch" element={<Merch />} />
+          <Route path="/portfolios" element={<Portfolios />} />
         </Routes>
         <Footer />
       </BrowserRouter>

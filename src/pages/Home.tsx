@@ -5,11 +5,14 @@ import HomeHero from "../components/PageLayouts/Home/HomeHero";
 import { ImageGallery } from "../constants/Images";
 import HomeTestimonials from "../components/PageLayouts/Home/HomeTestimonials";
 import { testimonials } from "../constants/Testimonials";
+import { HomeIntro } from "../components/PageLayouts/Home/HomeIntro";
 const Home = () => {
   return (
     <>
       <div>
         <HomeHero />
+
+        <HomeIntro />
 
         <HomePrograms />
 

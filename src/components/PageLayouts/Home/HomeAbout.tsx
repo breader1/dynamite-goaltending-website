@@ -1,5 +1,5 @@
 import AboutHeader from "../../Cards/CardHeader";
-import TeamGrid from "../../Cards/TeamGrid";
+import TeamGrid from "../../GridLayouts/TeamGrid";
 import { coaches } from "../../../constants/Coaches";
 import "./Home.css";
 

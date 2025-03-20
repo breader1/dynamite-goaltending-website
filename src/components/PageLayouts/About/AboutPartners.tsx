@@ -1,5 +1,5 @@
 import { partners } from "../../../constants/Partners";
-import PartnerCard from "../../PartnerCard/PartnerCard";
+import PartnerCard from "../../Cards/PartnerCard/PartnerCard";
 
 const AboutPartners = () => {
   return (

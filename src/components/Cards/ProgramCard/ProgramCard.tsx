@@ -5,7 +5,7 @@ interface ProgramCardProps {
   description: string;
   image: string;
   imageAlt: string;
-  price?: number;
+  price?: string;
 }
 
 const ProgramCard = ({

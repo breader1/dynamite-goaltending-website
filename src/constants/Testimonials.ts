@@ -14,6 +14,6 @@ export const testimonials: Testimonial[] = [
     role: "Junior Goalie",
     image: images.JacobV6,
     message:
-      "Norm and Brett have been great coaches. They have helped me improve my game and have been very supportive. I would recommend them to anyone looking to improve their game.",
+      "Norm is a great coach. He's helped me improve my game and is very supportive. I would recommend him to anyone looking to improve their game.",
   },
 ];

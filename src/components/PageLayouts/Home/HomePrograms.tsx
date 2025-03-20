@@ -1,5 +1,5 @@
-import ProgramCard from "../../ProgramCard/ProgramCard";
-import {Link} from "react-router-dom";
+import ProgramCard from "../../Cards/ProgramCard/ProgramCard";
+// import {Link} from "react-router-dom";
 import {programs} from "../../../constants/Programs";
 
 const HomePrograms = () => {
@@ -25,11 +25,11 @@ const HomePrograms = () => {
         ))}
       </div>
 
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <Link to="/programs" className="btn btn-outline-danger">
           Learn More
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
