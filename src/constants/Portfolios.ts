@@ -13,7 +13,6 @@ export const Portfolios: Portfolio[] = [
     url: PortfolioVideoURLs.Jacob,
     year: "2025",
   },
-
 ];
 
 export default Portfolios;

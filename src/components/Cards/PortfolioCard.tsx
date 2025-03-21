@@ -21,6 +21,7 @@ const PortfolioCard = ({ portfolio }: PortfolioCardProps) => {
           </div>
           <h5 className="fw-bold">{portfolio.title}</h5>
           <p>{portfolio.description}</p>
+          <p>{portfolio.year}</p>
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ export const programs: Program[] = [
     description: "Build a portfolio for scouts",
     image: images.Allen4,
     imageAlt: "Portfolio",
-    price: '198 + Ice Time Cost',
+    price: '190 + Ice Time Cost',
     long_description:
       "Our portfolio building sessions are designed to help goalies of all ages and skill levels create a comprehensive, professional portfolio that showcases their talent, skills, and experience. Whether you're looking to attract college scouts, professional teams, or sponsors, our experienced coaches will work closely with you to develop a customized portfolio that highlights your strengths, achievements, and unique playing style. With expert guidance, professional feedback, and a strategic approach, you'll gain the visibility and recognition you need to stand out in a competitive market.",
   },
