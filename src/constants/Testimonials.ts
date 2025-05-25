@@ -16,4 +16,11 @@ export const testimonials: Testimonial[] = [
     message:
       "Norm is a great coach. He's helped me improve my game and is very supportive. I would recommend him to anyone looking to improve their game.",
   },
+  {
+    name: "Dhali Jaswal",
+    role: "Men's League Goalie",
+    image: images.Dynamite,
+    message:
+      "Norm is a fantastic instructor and has great technical understanding of the position.",
+  },
 ];
