@@ -6,6 +6,7 @@ import "./Hero.css";
 interface HeroProps {
   title: string;
   subtitle?: string;
+  email?: string;
   backgroundImage: string; // Background image for parallax
   ctaText?: string;
   ctaLink?: string;
@@ -14,6 +15,7 @@ interface HeroProps {
 const Hero = ({
   title,
   subtitle,
+  email,
   backgroundImage,
   ctaText,
   ctaLink,
@@ -35,6 +37,9 @@ const Hero = ({
             <img src={title} alt="" loading="lazy" />
           </h1>
           {subtitle && <p className="hero-subtitle">{subtitle}</p>}
+            {email && (
+              <p><a href={`mailto:${email}?subject=Goalie Training Request`} className="hero-email">{email}</a></p>
+            )}
           {ctaText && (
             <Link to={ctaLink || "#"} className="hero-cta">
               {ctaText}

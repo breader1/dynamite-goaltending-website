@@ -13,6 +13,14 @@
   margin-bottom: 1rem;
 }
 
+.hero-email {
+  font-size: clamp(1rem, 3vw, 0.8rem);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
 .hero-title img {
   max-width: 80%; 
   height: auto;
@@ -20,7 +28,7 @@
 
 .hero-subtitle {
   font-size: clamp(1rem, 3vw, 1.5rem);
-  margin-bottom: 2rem;
+  margin-bottom: 1.0rem;
   color: white;
   font-weight: bold;
 }
