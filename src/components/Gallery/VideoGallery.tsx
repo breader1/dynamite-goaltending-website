@@ -1,7 +1,7 @@
 import "./Gallery.css";
 
 const YOUTUBE_PLAYLIST_ID = "PLCPWJN4tgTE21fx5N6RpQOPIiHithtwpn";
-const PLAYLIST_EMBED_URL = `https://www.youtube.com/embed/videoseries?list=${YOUTUBE_PLAYLIST_ID}`;
+const PLAYLIST_EMBED_URL = `https://www.youtube-nocookie.com/embed/videoseries?list=${YOUTUBE_PLAYLIST_ID}`;
 
 const VideoGallery: React.FC = () => {
   return (
@@ -19,6 +19,7 @@ const VideoGallery: React.FC = () => {
       <div className="video-container">
         <iframe
           src={PLAYLIST_EMBED_URL}
+          referrerPolicy="strict-origin-when-cross-origin"
           title="YouTube Playlist"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

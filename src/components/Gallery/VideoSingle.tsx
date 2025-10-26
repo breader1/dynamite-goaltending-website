@@ -22,6 +22,7 @@ const VideoSingle = ({ url, title, description }: VideoSingleProps) => {
           title={title}
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          referrerPolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
     </section>

@@ -1,3 +1,3 @@
 export const PortfolioVideoURLs = {
-    Jacob: "https://www.youtube.com/embed/tDlwqWKH6IU"
+    Jacob: "https://www.youtube-nocookie.com/embed/tDlwqWKH6IU"
 };
