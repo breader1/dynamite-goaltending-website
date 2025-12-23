@@ -16,6 +16,7 @@ const PortfolioCard = ({ portfolio }: PortfolioCardProps) => {
               src={portfolio.url}
               title={portfolio.title}
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
           </div>
