@@ -6,5 +6,5 @@ export const links: Link[] = [
   // { id: 3, linkName: "Programs" },
   { id: 4, linkName: "Portfolios" },
   { id: 5, linkName: "Contact" },
-  { id: 6, linkName: "Merch" },
+  // { id: 6, linkName: "Merch" },
 ];
