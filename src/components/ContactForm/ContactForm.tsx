@@ -45,6 +45,8 @@ const Contact = ({ email }: Props) => {
             Monday - Friday (5 PM - 9 PM), Weekends (9 AM - 3 PM)
           </strong>
           .
+          <br></br>
+          <em>Cancellations require 48 hours notice in order to properly reschedule ice times.</em>
         </p>
 
         {/* Contact Form */}
